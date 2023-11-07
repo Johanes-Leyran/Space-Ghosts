@@ -22,7 +22,6 @@ class Background(pygame.sprite.Sprite):
 
         if self.rect.y >= win_height:
             self.rect.y = -(self.image.get_height() + self.image.get_height() - win_height)
-            print(1)
 
 
 class Player(pygame.sprite.Sprite):
