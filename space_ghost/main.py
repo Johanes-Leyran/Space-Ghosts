@@ -1,4 +1,5 @@
-from entity import Background, Player
+from entity import Player
+from entity import Background
 import time
 import pygame
 pygame.init()
@@ -49,6 +50,7 @@ while running:
 
     screen.fill((100, 100, 100))
     handle_background()
+    player.draw(screen)
 
     clock.tick(FPS)
     pygame.display.flip()
